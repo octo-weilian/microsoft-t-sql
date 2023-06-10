@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  db:
+    container_name: "mssql"
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: "mssql-image:dev"
+    ports:
+      - "1433:1433"
+    
+    
+    
+      
+
